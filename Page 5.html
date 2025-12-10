@@ -9,7 +9,7 @@
 
     <style>
        body{
-        background-image: url('https://obmontessori.orangeapps.ph/landing/obmontessori/images/FV%20Facade.jpg');
+        background-image: url('https://images.squarespace-cdn.com/content/v1/664c7ae50eea9c731b37e817/9595f0cf-73f2-4fd6-b4c6-0b1493974fe6/DSC06854-HDR.jpg');
         background-size: cover;
         background-repeat: no-repeat;
        }
@@ -17,6 +17,19 @@
         height: 150px;
         width: 150px;
        }
+      .transparent-bg {
+        background-color: rgba(255, 255, 255, 0.8);
+        padding: 30px;
+        border-radius: 15px;
+      }
+      input.form-control {
+        background-color: #ffffff;
+        opacity: 1;
+      }
+      button{
+      background-color: rgba(0, 0, 143, 0.384);
+    
+      }
     </style>
 </head>
 <body>
@@ -56,12 +69,96 @@
 <br><br>
 
 <div class="container">
-    <p class="lead" fw-bold text-info>Home Page</p>
+    <p class="lead text-center" style="font-size: 60px; color: white;" fw-bold text-info>Contact Us</p>
     <br>
     <blockquote>
-        <span class="fst-italic bg-white">Lorem ipsum <b>dolor</b> sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam <b>urna tempor</b>. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.</span> 
+        <span class="fst-italic bg-white">For inquiries or assistance, please contact our office. Kindly refer to the table below for the school’s official office hours prior to your visit or call.</span> 
     </blockquote>
 </div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <p class="display-6" style="color: rgb(255, 255, 255);">School Office Hours</p>
+      <table class="table table-bordered table-striped table-hover">
+        <thead>
+          <tr class="table-info text-center">
+            <th>Day</th>
+            <th>Time</th>
+          </tr>
+        </thead>
+        <tbody class="text-center">
+          <tr><th>Monday</th><td>8:00 AM to 4:00 PM</td></tr>
+          <tr><th>Tuesday</th><td>8:00 AM to 5:00 PM</td></tr>
+          <tr><th>Wednesday</th><td>8:00 AM to 4:00 PM</td></tr>
+          <tr><th>Thursday</th><td>8:00 AM to 4:00 PM</td></tr>
+          <tr><th>Friday</th><td>8:00 AM to 4:30 PM</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+<div class="col-md-6">
+      <p class="display-6" style="color: rgb(255, 255, 255);">Contact Info</p>
+      <table class="table table-bordered table-striped table-hover">
+        <tbody>
+          <tr><th>Email</th><td>info@obmontessori.edu.ph</td></tr>
+          <tr><th>Phone</th><td>+63 2 8722 9720 to 26</td></tr>
+          <tr><th>Address</th><td> 3 Eisenhower St., Bgy. Greenhills, San Juan City, Metro Manila, Philippines/td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+  <div class="container">
+    <form class="row g-3 transparent-bg">
+
+      <div class="col-12">
+        <p class="lead text-center" style="font-size: 30px; color: black;">Contact Details</p>
+      </div>
+
+      <div class="col-md-6">
+        <label class="form-label">Full Name</label>
+        <input type="text" class="form-control" required>
+      </div>
+
+      <div class="col-md-6">
+        <label class="form-label">Phone Number</label>
+        <input type="text" class="form-control" required>
+      </div>
+
+      <div class="col-md-6">
+        <label class="form-label">Contact Number</label>
+        <input type="text" class="form-control" required>
+      </div>
+
+<div class="col-md-6">
+  <label class="form-label">Grade Level</label>
+  <select class="form-control" required>
+    <option value="" disabled selected>Select Grade Level</option>
+    <option value="Casa">Casa</option>
+    <option value="Junior Casa">Junior Casa</option>
+    <option value="Junior Advanced Casa">Junior Advanced Casa</option>
+    <option value="Advanced Casa">Advanced Casa</option>
+    <option value="1">1st Grade</option>
+    <option value="2">2nd Grade</option>
+    <option value="3">3rd Grade</option>
+    <option value="4">4th Grade</option>
+    <option value="5">5th Grade</option>
+    <option value="6">6th Grade</option>
+    <option value="7">7th Grade</option>
+    <option value="8">8th Grade</option>
+    <option value="9">9th Grade</option>
+    <option value="10">10th Grade</option>
+    <option value="11">11th Grade</option>
+    <option value="12">12th Grade</option>
+  </select>
+</div>
+
+<label for="message">Message</label>
+<textarea id="message" name="message" rows="4" placeholder="Type your message here..." required></textarea>
+
+<button type="Submit" id="Submit">Submit Form</button>
 
 </body>
 </html>
